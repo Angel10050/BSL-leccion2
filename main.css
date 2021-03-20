@@ -1,0 +1,146 @@
+/*IMG HERO ::: https://i.ibb.co/5h7g34h/pexels-hamann-la-947785.jpg*/
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#page-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background: gray url("https://i.ibb.co/5h7g34h/pexels-hamann-la-947785.jpg") no-repeat center;
+    background-size: cover;
+}
+
+#page-header blockquote {
+    width: 100%;
+    margin: auto 0 0 0;
+    border-top: 2px solid white;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 12px 0;
+    font-weight: bolder;
+}
+
+main, aside, #page-footer, .main-aside {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.main-title {
+    text-align: center;
+}
+
+#main-nav {
+    order: -1;
+    width: 100%;
+}
+
+#main-nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 1.8rem;
+}
+
+h2, h4 {
+    text-align: center;
+    width: 100%;
+}
+
+.article {
+    width: 100%;
+}
+
+.article section p, aside section p, footer section p {
+    text-align: justify;
+    line-height: 1.5rem;
+    width: 95%;
+    margin: 1rem auto;
+}
+
+.article section img {
+    width: 99.8%;
+}
+
+.aside-list {
+    padding: 0 0 0 1.4rem;
+}
+
+
+#page-footer {
+    background: black;
+    color: white;
+}
+
+#page-footer section h4 {
+    margin: 0;
+    padding: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+}
+
+form div input {
+    padding: .7rem 0px .3rem .7rem;
+}
+
+form button {
+    width: 5rem;
+    height: 1.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .article, aside section, footer section {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .main-aside {
+        width: 98%;
+    }
+
+    main {
+        width: 75%;
+    }
+
+    aside {
+        width: 25%;
+        display: block;
+    }
+
+    aside section {
+        width: 100%;
+    }
+
+}
